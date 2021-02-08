@@ -1,12 +1,25 @@
-# Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+# Site URL, name, and description
+url: https://intereleman.ir
+title: Eleman International
+description: >-
+  Eleman International Institute of Industrial and Manufacturing Researches (Eleman I3MR)
+# Enter only the prefix of the email addresses.
+contact-email: hello
+email-domain: intereleman.ir
+# Enter the phone numbers in reverse (for bot protection)
+phone: 5556 6966 12 89+
+phone-url: 5556-6966-12-89+:let
+# Social media
+linkedin: 
+twitter: 
+# Analytics
+google-analytics: 
 
-twitter_username:
-github_username:
 
 # Build settings
 markdown: kramdown
+
+
+# Animation settings (in seconds)
+wow-delay-services: .5
+wow-delay-contact: .3

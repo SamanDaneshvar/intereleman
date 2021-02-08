@@ -316,13 +316,17 @@ header {
 }
 
 // Contact
-#contact .fa, #contact .fab, #contact .fal, #contact .fas {
+#contact a {
     @include transition-all;
-    font-size: 4em;
     color: $theme-dark;
     &:hover, &:focus {
         color: $theme-primary;
     }
+}
+
+#contact .fa, #contact .fab, #contact .fal, #contact .fas, #contact .fad {
+    font-size: 4em;
+	padding-bottom: 10px;
 }
 
 // Extras
