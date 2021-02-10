@@ -271,6 +271,16 @@ th {
 }
 
 @import "{{ site.url }}/assets/fonts/glyphicons-halflings/_font-face.css";
+/* Persian fonts */
+@import "{{ site.url }}/assets/fonts/IranSans/_font-face.css";
+@import "{{ site.url }}/assets/fonts/IranSansDN/_font-face.css";
+@import "{{ site.url }}/assets/fonts/IranYekan/_font-face.css";
+@import "{{ site.url }}/assets/fonts/Nahid/_font-face.css";
+@import "{{ site.url }}/assets/fonts/Parastoo/_font-face.css";
+@import "{{ site.url }}/assets/fonts/Sahel/_font-face.css";
+@import "{{ site.url }}/assets/fonts/Samim/_font-face.css";
+@import "{{ site.url }}/assets/fonts/Shabnam/_font-face.css";
+@import "{{ site.url }}/assets/fonts/Vazir/_font-face.css";
 
 .glyphicon {
   position: relative;
