@@ -1,0 +1,60 @@
+<section id="contact">
+    <div class="container">
+        <div class="row text-center">
+            
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="section-heading">با ما تماس بگیرید.</h2>
+                <hr class="primary">
+                <p>آیا برای شروع پروژه‌ی آتی خود با ما آماده‌اید؟ با ما تماس بگیرید و در اولین فرصت نیازسنجی خود را دریافت کنید.</p>
+            </div>
+            
+            <div class="col-lg-2 col-lg-offset-2">
+                <a id="email" href="mailto:honeypot" onmouseover="reveal(this)" ontouchstart="reveal(this)">
+                    <i class="fal fa-envelope wow bounceIn" data-wow-delay="{{ site.wow-delay-contact }}s"></i>
+                    <p>دفاع بات. روی این متن بروید تا آدرس نمایان شود.</p>
+                </a>
+            </div>
+			
+            <div class="col-lg-2">
+                <a id="phone" href="tel:+98" onmouseover="reveal(this)" ontouchstart="reveal(this)">
+                    <i class="fad fa-phone wow bounceIn" data-wow-delay="{{ site.wow-delay-contact }}s"></i>
+                    <p>دفاع بات. روی این متن بروید تا شماره نمایان شود.</p>
+                </a>
+            </div>
+			
+            <div class="col-lg-2">
+                <a href="https://www.linkedin.com/in/{{ site.linkedin }}/">
+                    <i class="fab fa-linkedin wow bounceIn" data-wow-delay="{{ site.wow-delay-contact }}s"></i>
+                    <p>{{ site.linkedin }}</p>
+                </a>
+            </div>
+			
+            <div class="col-lg-2">
+                <a href="https://twitter.com/{{ site.twitter }}">
+                    <i class="fab fa-twitter wow bounceIn" data-wow-delay="{{ site.wow-delay-contact }}s"></i>
+                    <p>{{ site.twitter }}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script type="module">
+/* Each module has its own top-level scope. To make the *reveal()* function global so that *onmouseover* can access it,
+we have defined the function as a property of the *window* object. In a web browser, the *window* object is the global object.
+
+Alternatively, you can remove the type="module" attribute from the <script> element. In that case, all the variables and functions
+defined in the <script> element will have a global scope. However, modules are always deferred, and that's why we have used a module here.
+*/
+window.reveal = function(element) {
+  if (element.id == "email") {
+    const ADDRESS = "{{ site.contact-email }}" + String.fromCharCode(64) + "{{ site.email-domain }}";
+    element.getElementsByTagName("p")[0].innerHTML = ADDRESS;
+    element.href = ":otliam".split("").reverse().join("") + ADDRESS;
+  } else if (element.id == "phone") {
+    element.getElementsByTagName("p")[0].innerHTML = "{{ site.phone }}".split("").reverse().join("");
+    element.href = "{{ site.phone-url }}".split("").reverse().join("");
+  }
+};
+</script>

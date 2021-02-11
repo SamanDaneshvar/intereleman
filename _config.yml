@@ -1,8 +1,13 @@
 # Site URL, name, and description
 url: https://intereleman.ir
-title: Eleman International
-description: >-
-  Eleman International Institute of Industrial and Manufacturing Researches (Eleman I3MR)
+title:
+  en: Eleman International
+  fa: مؤسسه بین‌المللی المان
+description:
+  en: >-
+    Eleman International Institute of Industrial and Manufacturing Researches (Eleman I3MR)
+  fa: >-
+    مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
 # Enter only the prefix of the email addresses.
 contact-email: hello
 email-domain: intereleman.ir
