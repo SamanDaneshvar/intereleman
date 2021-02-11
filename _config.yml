@@ -15,10 +15,8 @@ twitter:
 # Analytics
 google-analytics: 
 
-
 # Build settings
 markdown: kramdown
-
 
 # Animation settings (in seconds)
 wow-delay-services: .5
