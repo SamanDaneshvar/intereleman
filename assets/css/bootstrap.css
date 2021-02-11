@@ -5,9 +5,22 @@
  * Bootstrap v3.3.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * 
+ * normalize.css v3.0.2 | MIT License | git.io/normalize
  */
-
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+ 
+/* Imported rules must precede all other types of rules in the CSS file, except @charset rules. */
+@import "{{ site.url }}/assets/fonts/glyphicons-halflings/font-face.css";
+/* Persian fonts */
+@import "{{ site.url }}/assets/fonts/IranSans/font-face.css";
+@import "{{ site.url }}/assets/fonts/IranSansDN/font-face.css";
+@import "{{ site.url }}/assets/fonts/IranYekan/font-face.css";
+@import "{{ site.url }}/assets/fonts/Nahid/font-face.css";
+@import "{{ site.url }}/assets/fonts/Parastoo/font-face.css";
+@import "{{ site.url }}/assets/fonts/Sahel/font-face.css";
+@import "{{ site.url }}/assets/fonts/Samim/font-face.css";
+@import "{{ site.url }}/assets/fonts/Shabnam/font-face.css";
+@import "{{ site.url }}/assets/fonts/Vazir/font-face.css";
 
 html {
   font-family: sans-serif;
@@ -269,18 +282,6 @@ th {
     border: 1px solid #ddd !important;
   }
 }
-
-@import "{{ site.url }}/assets/fonts/glyphicons-halflings/_font-face.css";
-/* Persian fonts */
-@import "{{ site.url }}/assets/fonts/IranSans/_font-face.css";
-@import "{{ site.url }}/assets/fonts/IranSansDN/_font-face.css";
-@import "{{ site.url }}/assets/fonts/IranYekan/_font-face.css";
-@import "{{ site.url }}/assets/fonts/Nahid/_font-face.css";
-@import "{{ site.url }}/assets/fonts/Parastoo/_font-face.css";
-@import "{{ site.url }}/assets/fonts/Sahel/_font-face.css";
-@import "{{ site.url }}/assets/fonts/Samim/_font-face.css";
-@import "{{ site.url }}/assets/fonts/Shabnam/_font-face.css";
-@import "{{ site.url }}/assets/fonts/Vazir/_font-face.css";
 
 .glyphicon {
   position: relative;
