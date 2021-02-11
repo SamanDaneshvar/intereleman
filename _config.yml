@@ -9,11 +9,14 @@ description:
   fa: >-
     مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
 # Enter only the prefix of the email addresses.
-contact-email: hello
-email-domain: intereleman.ir
+email:
+  contact: hello
+  domain: intereleman.ir
 # Enter the phone numbers in reverse (for bot protection)
-phone: 5556 6966 12 89+
-phone-url: 5556-6966-12-89+:let
+phone:
+  en: 5556 6966 12 89+
+  fa: ۵۵۵۶۶۹۶۶ - ۱۲۰
+  url: 5556-6966-12-89+:let
 # Social media
 linkedin: 
 twitter: 
