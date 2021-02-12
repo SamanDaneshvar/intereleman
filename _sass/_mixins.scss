@@ -52,10 +52,20 @@
   }
 }
 
-@mixin sans-serif-font() {
+// Fonts
+// A *display* typeface is used for headings, as opposed to the *body* text.
+@mixin display-font-en() {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-@mixin serif-font() {
+@mixin body-font-en() {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin display-font-fa() {
+  font-family: IranYekan, IranSans, Vazir, Samim;
+}
+
+@mixin body-font-fa() {
+  font-family: Samim, Vazir, IranSans, IranYekan, IranSansDN, Shabnam, Nahid, Parastoo, Sahel;
 }

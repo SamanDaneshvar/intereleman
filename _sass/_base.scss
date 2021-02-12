@@ -5,7 +5,11 @@ body {
 }
 
 body {
-  @include serif-font;
+  @include body-font-en;
+}
+
+body:lang(fa) {
+  @include body-font-fa;
 }
 
 hr {
@@ -33,7 +37,16 @@ h3,
 h4,
 h5,
 h6 {
-  @include sans-serif-font;
+  @include display-font-en;
+}
+
+h1:lang(fa),
+h2:lang(fa),
+h3:lang(fa),
+h4:lang(fa),
+h5:lang(fa),
+h6:lang(fa) {
+  @include display-font-fa;
 }
 
 p {
@@ -71,7 +84,7 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba($theme-dark, .5);
-  @include sans-serif-font;
+  @include display-font-en;
   @include transition-all;
   .navbar-header .navbar-brand {
     color: $theme-primary;
@@ -143,6 +156,10 @@ aside {
       }
     }
   }
+}
+
+.navbar-default:lang(fa) {
+  @include display-font-fa;
 }
 
 // Homepage Header
@@ -239,18 +256,23 @@ header {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      .project-category,
-      .project-name {
-        @include sans-serif-font;
-        padding: 0 15px;
-      }
       .project-category {
+        @include display-font-en;
+        padding: 0 15px;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 14px;
       }
       .project-name {
+        @include display-font-en;
+        padding: 0 15px;
         font-size: 18px;
+      }
+      .project-category:lang(fa) {
+        @include display-font-fa;
+      }
+      .project-name:lang(fa) {
+        @include display-font-fa;
       }
     }
   }
@@ -299,7 +321,15 @@ header {
 }
 
 .btn {
-  @include sans-serif-font;
+  @include display-font-en;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn:lang(fa) {
+  @include display-font-fa;
   border: none;
   border-radius: 300px;
   font-weight: 700;
