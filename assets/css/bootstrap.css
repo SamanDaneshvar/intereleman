@@ -12,15 +12,11 @@
 /* Imported rules must precede all other types of rules in the CSS file, except @charset rules. */
 @import "{{ site.url }}/assets/fonts/glyphicons-halflings/font-face.css";
 /* Persian fonts */
-@import "{{ site.url }}/assets/fonts/IranSans/font-face.css";
-@import "{{ site.url }}/assets/fonts/IranSansDN/font-face.css";
 @import "{{ site.url }}/assets/fonts/IranYekan/font-face.css";
-@import "{{ site.url }}/assets/fonts/Nahid/font-face.css";
-@import "{{ site.url }}/assets/fonts/Parastoo/font-face.css";
-@import "{{ site.url }}/assets/fonts/Sahel/font-face.css";
-@import "{{ site.url }}/assets/fonts/Samim/font-face.css";
-@import "{{ site.url }}/assets/fonts/Shabnam/font-face.css";
+@import "{{ site.url }}/assets/fonts/IranSans/font-face.css";
 @import "{{ site.url }}/assets/fonts/Vazir/font-face.css";
+@import "{{ site.url }}/assets/fonts/Samim/font-face.css";
+@import "{{ site.url }}/assets/fonts/IranSansDN/font-face.css";
 
 html {
   font-family: sans-serif;
