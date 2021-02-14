@@ -26,6 +26,9 @@ google-analytics:
 # Build settings
 markdown: kramdown
 
+# Animation settings (in milliseconds)
+aos-delay-services: 500  # Between each two
+aos-delay-contact: 100  # All simultaneously
 # Animation settings (in seconds)
 wow-delay-services: .5  # Between each two
 wow-delay-contact: .3  # All simultaneously
