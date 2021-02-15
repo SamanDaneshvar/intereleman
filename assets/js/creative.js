@@ -5,7 +5,7 @@
  */
 
 (function($) {
-	// Start of use strict
+    // Start of use strict
     "use strict";
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -43,8 +43,12 @@
         }
     })
 
-    // Initialize AOS.js and WOW.js Scrolling Animations
-    AOS.init();
-	new WOW().init();
+    // Initialize AOS.js (Animate on scroll)
+	// The following configuration is required to integrate AOS.js with Animate.css
+    AOS.init({
+        useClassNames: true,                     // Default: false
+        initClassName: "aos-animate",            // Default: "aos-init". Due to a bug in third-party animation CSS integration, "aos-animate" is required for AOS to trigger animation-delay.
+        animatedClassName: "animate__animated",  // Default: "aos-animate"
+    });
 
 })(jQuery); // End of use strict
