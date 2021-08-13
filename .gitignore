@@ -1,3 +1,6 @@
 _site/
 .jekyll-cache/
 .sass-cache/
+
+# Jet Brains (WebStorm, etc.)
+.idea/
