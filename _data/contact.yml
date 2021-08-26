@@ -1,0 +1,14 @@
+# Enter only the prefix of the email addresses.
+email:
+  hello: hello
+  domain: intereleman.ir
+
+# Enter the phone numbers in reverse (for bot protection).
+phone:
+  en: 5556 6966 12 89+
+  fa: ۵۵۵۶۶۹۶۶ - ۱۲۰
+  url: 5556-6966-12-89+:let
+
+# Social media
+linkedin: eleman-international
+twitter:

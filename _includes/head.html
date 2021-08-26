@@ -3,13 +3,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description[page.lang] }}">
+    <meta name="description" content="{{ site.data.seo.description[page.lang] }}">
     <meta name="author" content="">
 
     {% if page.title_override %}
         {% assign page_title = page.title_override %}
     {% else %}
-        {% capture page_title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title[page.lang] }}{% endcapture %}
+        {% capture page_title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.seo.title[page.lang] }}{% endcapture %}
     {% endif %}
 
     <title>{{ page_title }}</title>

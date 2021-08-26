@@ -1,30 +1,5 @@
-# Site URL, name, and description
+# Site URL
 url: https://intereleman.ir
-title:
-  en: Eleman International
-  fa: مؤسسه بین‌المللی المان
-description:
-  en: >-
-    Eleman International Institute of Industrial and Manufacturing Research (Eleman I3MR)
-  fa: >-
-    مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
-# Enter only the prefix of the email addresses.
-email:
-  contact: hello
-  domain: intereleman.ir
-# Enter the phone numbers in reverse (for bot protection)
-phone:
-  en: 5556 6966 12 89+
-  fa: ۵۵۵۶۶۹۶۶ - ۱۲۰
-  url: 5556-6966-12-89+:let
-# Social media
-linkedin: eleman-international
-twitter: 
-# Analytics
-google-analytics: 
 
 # Build settings
 markdown: kramdown
-
-# Animation settings (in milliseconds)
-aos-delay-services: 500  # Between each two

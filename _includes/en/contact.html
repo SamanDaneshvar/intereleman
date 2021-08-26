@@ -23,16 +23,16 @@
             </div>
 			
             <div class="col-lg-2">
-                <a href="https://www.linkedin.com/company/{{ site.linkedin }}/">
+                <a href="https://www.linkedin.com/company/{{ site.data.contact.linkedin }}/">
                     <i class="fab fa-linkedin" data-aos="animate__fadeIn"></i>
-                    <p>{{ site.linkedin }}</p>
+                    <p>{{ site.data.contact.linkedin }}</p>
                 </a>
             </div>
 			
             <div class="col-lg-2">
-                <a href="https://twitter.com/{{ site.twitter }}">
+                <a href="https://twitter.com/{{ site.data.contact.twitter }}">
                     <i class="fab fa-twitter" data-aos="animate__fadeIn"></i>
-                    <p>{{ site.twitter }}</p>
+                    <p>{{ site.data.contact.twitter }}</p>
                 </a>
             </div>
         </div>
@@ -49,13 +49,13 @@ defined in the <script> element will have a global scope. However, modules are a
 */
 window.reveal = function(element) {
   if (element.id == "email") {
-    const ADDRESS = "{{ site.email.contact }}" + String.fromCharCode(64) + "{{ site.email.domain }}";
+    const ADDRESS = "{{ site.data.contact.email.hello }}" + String.fromCharCode(64) + "{{ site.data.contact.email.domain }}";
     element.getElementsByTagName("p")[0].innerHTML = ADDRESS;
     element.href = ":otliam".split("").reverse().join("") + ADDRESS;
   } else if (element.id == "phone") {
     element.style = "direction: ltr;";  // This is necessary for Persian pages, and uneffective on English pages.
-	element.getElementsByTagName("p")[0].innerHTML = "{{ site.phone[page.lang] }}".split("").reverse().join("");
-    element.href = "{{ site.phone.url }}".split("").reverse().join("");
+	element.getElementsByTagName("p")[0].innerHTML = "{{ site.data.contact.phone[page.lang] }}".split("").reverse().join("");
+    element.href = "{{ site.data.contact.phone.url }}".split("").reverse().join("");
   }
 };
 </script>
