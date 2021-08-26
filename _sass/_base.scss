@@ -341,10 +341,6 @@ header {
 
 .btn:lang(fa) {
   @include display-font-fa;
-  border: none;
-  border-radius: 300px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .btn-xl {
