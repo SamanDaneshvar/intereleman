@@ -49,6 +49,17 @@ h6:lang(fa) {
   @include display-font-fa;
 }
 
+// Use the Farsi-Digits variant of the Persian fonts, in elements such as
+// ordered lists, where English numbers are enforced by default.
+ol:lang(fa) {
+  @include body-font-fa-farsi-digits;
+}
+
+ul,
+ol {
+  font-size: 16px;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;

@@ -16,6 +16,7 @@
 @import "{{ site.url }}/assets/fonts/IranSans/font-face.css";
 @import "{{ site.url }}/assets/fonts/Vazir/font-face.css";
 @import "{{ site.url }}/assets/fonts/Samim/font-face.css";
+@import "{{ site.url }}/assets/fonts/SamimFD/font-face.css";
 @import "{{ site.url }}/assets/fonts/IranSansDN/font-face.css";
 
 html {

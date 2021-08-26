@@ -69,3 +69,7 @@
 @mixin body-font-fa() {
   font-family: Samim, Vazir, IranSans, IranYekan, IranSansDN;
 }
+
+@mixin body-font-fa-farsi-digits() {
+  font-family: SamimFD, Samim, Vazir, IranSans, IranYekan, IranSansDN;
+}
