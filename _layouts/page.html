@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}" {% if page.lang == "fa" %}dir="rtl"{% endif %}>
+    {% include head.html %}
+
+    <body id="page-top">
+        {% include {{ page.lang | append: "/nav.html" }} %}
+        {% include {{ page.lang | append: "/header.html" }} %}
+        {{ content }}
+        {% include {{ page.lang | append: "/contact.html" }} %}
+
+        {% include scripts.html %}
+    </body>
+</html>
