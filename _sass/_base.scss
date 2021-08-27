@@ -397,3 +397,24 @@ th:lang(fa),
 caption:lang(fa) {
   text-align: right;
 }
+
+ul.fa-bullet {
+  list-style-type: none;
+  line-height: 1.531;
+}
+
+.fa-bullet i:lang(en) {
+  margin:0 5px 0 -15px;
+}
+
+.fa-bullet i:lang(fa) {
+  margin:0 -21px 0 5px;
+}
+
+.fa-bullet i.fa-check {
+  color: limegreen;
+}
+
+.fa-bullet i.fa-gem {
+  color: cornflowerblue;
+}
