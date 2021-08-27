@@ -1,7 +1,7 @@
 ---
 # This YAML front matter block is added to trigger Jekyll processing.
 ---
-/*!
+/*
  * Bootstrap v3.3.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -10,14 +10,14 @@
  */
  
 /* Imported rules must precede all other types of rules in the CSS file, except @charset rules. */
-@import "{{ site.url }}/assets/fonts/glyphicons-halflings/font-face.css";
+@import "/assets/fonts/glyphicons-halflings/font-face.css";
 /* Persian fonts */
-@import "{{ site.url }}/assets/fonts/IranYekan/font-face.css";
-@import "{{ site.url }}/assets/fonts/IranSans/font-face.css";
-@import "{{ site.url }}/assets/fonts/Vazir/font-face.css";
-@import "{{ site.url }}/assets/fonts/Samim/font-face.css";
-@import "{{ site.url }}/assets/fonts/SamimFD/font-face.css";
-@import "{{ site.url }}/assets/fonts/IranSansDN/font-face.css";
+@import "/assets/fonts/IranYekan/font-face.css";
+@import "/assets/fonts/IranSans/font-face.css";
+@import "/assets/fonts/Vazir/font-face.css";
+@import "/assets/fonts/Samim/font-face.css";
+@import "/assets/fonts/SamimFD/font-face.css";
+@import "/assets/fonts/IranSansDN/font-face.css";
 
 html {
   font-family: sans-serif;
