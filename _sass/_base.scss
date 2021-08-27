@@ -55,6 +55,10 @@ ol:lang(fa) {
   @include body-font-fa-farsi-digits;
 }
 
+.font-farsi-digits {
+  @include body-font-fa-farsi-digits;
+}
+
 ul,
 ol {
   font-size: 16px;
@@ -387,4 +391,9 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: $theme-dark;
+}
+
+th:lang(fa),
+caption:lang(fa) {
+  text-align: right;
 }
