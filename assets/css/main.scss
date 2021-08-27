@@ -2,7 +2,6 @@
 ---
 @charset "utf-8";
 
-
 // Example Defaults
 // $base-font-family: Helvetica, Arial, sans-serif;
 // $base-font-size:   16px;
@@ -40,3 +39,14 @@ $theme-dark: #222;
 
 // Import partials from *sass_dir* (defaults to '_sass')
 @import "mixins", "base";
+
+// Import Persian fonts
+@import "/assets/fonts/IranYekan/font-face.css";
+@import "/assets/fonts/IranSans/font-face.css";
+@import "/assets/fonts/Vazir/font-face.css";
+@import "/assets/fonts/Samim/font-face.css";
+@import "/assets/fonts/SamimFD/font-face.css";
+@import "/assets/fonts/IranSansDN/font-face.css";
+
+// Import other fonts
+@import "/assets/fonts/glyphicons-halflings/font-face.css";
