@@ -8,7 +8,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="/{{ page.lang }}">{{ site.data.seo.title[page.lang] }}</a>
+
+            {% capture home_url %}/{{ page.lang }}/{% endcapture %}
+            {% capture brand_href %}
+                {% if page.url == home_url %}
+                    #page-top
+                {% else %}
+                    /{{ page.lang }}
+                {% endif %}
+            {% endcapture %}
+            <a class="navbar-brand page-scroll" href="{{ brand_href }}">{{ site.data.seo.title[page.lang] }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
