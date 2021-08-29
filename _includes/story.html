@@ -1,0 +1,10 @@
+<section id="{{ include.content }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                {% capture include_md %}{% include content/{{ include.content }}_{{ page.lang }}.md %}{% endcapture %}
+                {{ include_md | markdownify }}
+            </div>
+        </div>
+    </div>
+</section>

@@ -3,9 +3,9 @@
     {% include head.html %}
 
     <body id="page-top">
-        {% include {{ page.lang | append: "/ipc-intro.html" }} %}
         {% include nav.html %}
         {% include header.html %}
+        {% include story.html content="ipc-intro" %}
         {% include call-to-action.html %}
         {% include services.html %}
         {% include portfolio.html %}
