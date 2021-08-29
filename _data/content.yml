@@ -1,0 +1,23 @@
+head:
+  title:
+    en: Eleman International
+    fa: مؤسسه بین‌المللی المان
+  description:
+    en: >-
+      Eleman International Institute of Industrial and Manufacturing Research (Eleman I3MR)
+    fa: >-
+      مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
+
+contact:
+  email:
+    # Enter only the prefix of the email addresses.
+    hello: hello
+    domain: intereleman.ir
+  phone:
+    # Enter the phone numbers in reverse (for bot protection).
+    en: 5556 6966 12 89+
+    fa: ۵۵۵۶۶۹۶۶ - ۱۲۰
+    url: 5556-6966-12-89+:let
+  # Social media
+  linkedin: eleman-international
+  twitter:
