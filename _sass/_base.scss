@@ -233,6 +233,12 @@ header {
   }
 }
 
+header.compact {
+  @media (min-width: 768px) {
+    min-height: 50%;
+  }
+}
+
 // Sections
 .section-heading {
   margin-top: 0;
