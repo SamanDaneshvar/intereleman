@@ -1,5 +1,8 @@
-{% assign this = site.data.content.nav %}
-{% assign lg = page.lang %}
+{%- assign this = site.data.content.nav -%}
+{%- assign lg = page.lang -%}
+
+{%- capture home_url %}/{{ lg }}/{% endcapture %}
+
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -12,25 +15,31 @@
                 <span class="icon-bar"></span>
             </button>
 
-            {% capture home_url %}/{{ lg }}/{% endcapture %}
-            {% capture brand_href %}
-                {% if page.url == home_url %}
+            {% capture brand_href -%}
+                {%- if page.url == home_url -%}
                     #page-top
-                {% else %}
+                {%- else -%}
                     /{{ lg }}
-                {% endif %}
-            {% endcapture %}
+                {%- endif -%}
+            {%- endcapture -%}
             <a class="navbar-brand page-scroll" href="{{ brand_href }}">{{ site.data.content.head.title[lg] }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                {% for item in this %}
+            {% for item in this %}
+                {% capture item_href -%}
+                    {%- unless page.url == home_url -%}
+                        /{{ lg }}/
+                    {%- endunless -%}
+                    {{ item.href }}
+                {%- endcapture -%}
+
                 <li>
-                    <a class="page-scroll" href="{{ item.href }}">{{ item.title[lg] }}</a>
+                    <a class="page-scroll" href="{{ item_href }}">{{ item.title[lg] }}</a>
                 </li>
-                {% endfor %}
+            {% endfor %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->
