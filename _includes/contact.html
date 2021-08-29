@@ -1,40 +1,47 @@
+{% assign this = site.data.content.contact %}
+{% assign lg = page.lang %}
+
 <section id="contact">
     <div class="container">
         <div class="row text-center">
             
             <div class="col-lg-8 col-lg-offset-2">
-                <h2 class="section-heading">با ما تماس بگیرید.</h2>
+                <h2 class="section-heading">{{ this.heading[lg] }}</h2>
                 <hr class="primary">
-                <p>آیا برای شروع پروژۀ آتی خود با ما آماده‌اید؟ با ما تماس بگیرید و در اولین فرصت برآورد رایگان خود را دریافت کنید.</p>
+                <p>{{ this.text[lg] }}</p>
             </div>
             
             <div class="col-lg-2 col-lg-offset-2">
                 <a id="email" href="mailto:honeypot" onmouseover="reveal(this)" ontouchstart="reveal(this)">
                     <i class="fal fa-envelope" data-aos="animate__fadeIn"></i>
-                    <p>دفاع بات. روی این متن بروید تا آدرس نمایان شود.</p>
+                    <p>{{ this.email.bot-defense-text[lg] }}</p>
                 </a>
             </div>
 			
             <div class="col-lg-2">
                 <a id="phone" href="tel:+98" onmouseover="reveal(this)" ontouchstart="reveal(this)">
                     <i class="fad fa-phone" data-aos="animate__fadeIn"></i>
-                    <p>دفاع بات. روی این متن بروید تا شماره نمایان شود.</p>
+                    <p>{{ this.phone.bot-defense-text[lg] }}</p>
                 </a>
             </div>
-			
+
+            {% if this.linkedin %}
             <div class="col-lg-2">
-                <a href="https://www.linkedin.com/company/{{ site.data.contact.linkedin }}/">
+                <a href="https://www.linkedin.com/company/{{ this.linkedin }}">
                     <i class="fab fa-linkedin" data-aos="animate__fadeIn"></i>
-                    <p>{{ site.data.contact.linkedin }}</p>
+                    <p>{{ this.linkedin }}</p>
                 </a>
             </div>
-			
+            {% endif %}
+
+            {% if this.twitter %}
             <div class="col-lg-2">
-                <a href="https://twitter.com/{{ site.data.contact.twitter }}">
+                <a href="https://twitter.com/{{ this.twitter }}">
                     <i class="fab fa-twitter" data-aos="animate__fadeIn"></i>
-                    <p>{{ site.data.contact.twitter }}</p>
+                    <p>{{ this.twitter }}</p>
                 </a>
             </div>
+            {% endif %}
         </div>
     </div>
 </section>
@@ -49,13 +56,13 @@ defined in the <script> element will have a global scope. However, modules are a
 */
 window.reveal = function(element) {
   if (element.id == "email") {
-    const ADDRESS = "{{ site.data.contact.email.hello }}" + String.fromCharCode(64) + "{{ site.data.contact.email.domain }}";
+    const ADDRESS = "{{ this.email.hello }}" + String.fromCharCode(64) + "{{ this.email.domain }}";
     element.getElementsByTagName("p")[0].innerHTML = ADDRESS;
     element.href = ":otliam".split("").reverse().join("") + ADDRESS;
   } else if (element.id == "phone") {
     element.style = "direction: ltr;";  // This is necessary for Persian pages, and uneffective on English pages.
-	element.getElementsByTagName("p")[0].innerHTML = "{{ site.data.contact.phone[page.lang] }}".split("").reverse().join("");
-    element.href = "{{ site.data.contact.phone.url }}".split("").reverse().join("");
+	element.getElementsByTagName("p")[0].innerHTML = "{{ this.phone[lg] }}".split("").reverse().join("");
+    element.href = "{{ this.phone.url }}".split("").reverse().join("");
   }
 };
 </script>

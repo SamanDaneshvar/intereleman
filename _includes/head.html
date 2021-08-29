@@ -1,15 +1,17 @@
-<head>
+{% assign this = site.data.content.head %}
+{% assign lg = page.lang %}
 
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.data.seo.description[page.lang] }}">
+    <meta name="description" content="{{ this.description[lg] }}">
     <meta name="author" content="">
 
     {% if page.title_override %}
         {% assign page_title = page.title_override %}
     {% else %}
-        {% capture page_title %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.seo.title[page.lang] }}{% endcapture %}
+        {% capture page_title %}{% if page.title %}{{ page.title }} | {% endif %}{{ this.title[lg] }}{% endcapture %}
     {% endif %}
 
     <title>{{ page_title }}</title>
@@ -41,5 +43,4 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>

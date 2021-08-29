@@ -1,0 +1,15 @@
+{% assign this = site.data.content.call-to-action %}
+{% assign lg = page.lang %}
+
+<aside class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{ this.heading[lg] }}</h2>
+                <hr class="light">
+                <p class="text-faded">{{ this.text[lg] }}</p>
+                <a class="btn btn-default btn-xl page-scroll" href="{{ this.button.href }}">{{ this.button.title[lg] }}</a>
+            </div>
+        </div>
+    </div>
+</aside>

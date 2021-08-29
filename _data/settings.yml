@@ -1,5 +1,2 @@
 # Analytics
 google-analytics:
-
-# Animation settings (in milliseconds)
-aos-delay-services: 500  # Between each two

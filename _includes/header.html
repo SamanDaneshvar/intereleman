@@ -1,0 +1,16 @@
+{% assign this = site.data.content.header %}
+{% assign lg = page.lang %}
+
+<header {% if include.compact %}class="compact"{% endif %}>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>{{ this.title[lg] }}</h1>
+            <hr>
+			<h3>{{ this.subtitle[lg] }}</h3>
+			<br>
+            {% unless include.compact %}
+            <a href="{{ this.button.href }}" class="btn btn-primary btn-xl page-scroll">{{ this.button.title[lg] }}</a>
+            {% endunless %}
+        </div>
+    </div>
+</header>

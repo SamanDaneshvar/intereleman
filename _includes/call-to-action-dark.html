@@ -1,0 +1,11 @@
+{% assign this = site.data.content.call-to-action-dark %}
+{% assign lg = page.lang %}
+
+<aside class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>{{ this.heading[lg] }}</h2>
+            <a class="btn btn-default btn-xl page-scroll" data-aos="animate__flipInX" href="{{ this.button.href }}">{{ this.button.title[lg] }}</a>
+        </div>
+    </div>
+</aside>

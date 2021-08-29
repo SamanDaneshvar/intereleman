@@ -8,12 +8,212 @@ head:
     fa: >-
       مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
 
+
+header:
+  title:
+    en: Eleman International
+    fa: مؤسسه بین‌المللی اِلِمان
+  subtitle:
+    en: Pushing the boundaries of science and technology.
+    fa: تحقیقات صنعتی - تولیدی
+  button:
+    href: "#ipc-intro"
+    title:
+      en: About Insulator Polymer Concrete (IPC)
+      fa: دربارۀ پلیمر بتن عایق (IPC)
+
+
+nav:
+  -
+    href: "#ipc-intro"
+    title:
+      en: Insulator Polymer Concrete (IPC)
+      fa: پلیمر بتن عایق (IPC)
+  -
+    href: "#services"
+    title:
+      en: Services
+      fa: خدمات
+  -
+    href: "#portfolio"
+    title:
+      en: Portfolio
+      fa: پروژه‌ها
+  -
+    href: "#contact"
+    title:
+      en: Contact
+      fa: تماس
+
+
+call-to-action:
+  heading:
+    en: Innovative solutions to industrial problems
+    fa: راهکارهای نوآورانه برای رفع مشکلات صنعت
+  text:
+    en: >-
+      Eleman International is driven by a grand purpose:<br>making a better world through innovation, research, and education.
+    fa: >-
+      مؤسسۀ بین‌المللی المان با یک هدف بزرگ هدایت می‌شود:<br>ساختن دنیایی بهتر به وسیلۀ نوآوری، تحقیقات، و آموزش.
+  button:
+    href: "#contact"
+    title:
+      en: Get Started!
+      fa: شروع کنید!
+
+
+call-to-action-dark:
+  heading:
+    en: Get a Free Needs Assessment Today!
+    fa: همین امروز برای برآورد رایگان اقدام کنید.
+  button:
+    href: "#contact"
+    title:
+      en: Get Started!
+      fa: شروع کنید!
+
+
+portfolio:
+  -
+    category:
+      en: Category
+      fa: دسته
+    name:
+      en: Project
+      fa: پروژه
+    img-alt:
+      en: Alt
+      fa: توضیح تصویر
+    img-src: 1.jpg
+    href: javascript:void(0);
+  -
+    category:
+      en: Category
+      fa: دسته
+    name:
+      en: Project
+      fa: پروژه
+    img-alt:
+      en: Alt
+      fa: توضیح تصویر
+    img-src: 2.jpg
+    href: javascript:void(0);
+  -
+    category:
+      en: Category
+      fa: دسته
+    name:
+      en: Project
+      fa: پروژه
+    img-alt:
+      en: Alt
+      fa: توضیح تصویر
+    img-src: 3.jpg
+    href: javascript:void(0);
+  -
+    category:
+      en: Category
+      fa: دسته
+    name:
+      en: Project
+      fa: پروژه
+    img-alt:
+      en: Alt
+      fa: توضیح تصویر
+    img-src: 4.jpg
+    href: javascript:void(0);
+  -
+    category:
+      en: Category
+      fa: دسته
+    name:
+      en: Project
+      fa: پروژه
+    img-alt:
+      en: Alt
+      fa: توضیح تصویر
+    img-src: 5.jpg
+    href: javascript:void(0);
+  -
+    category:
+      en: Category
+      fa: دسته
+    name:
+      en: Project
+      fa: پروژه
+    img-alt:
+      en: Alt
+      fa: توضیح تصویر
+    img-src: 6.jpg
+    href: javascript:void(0);
+
+
+services:
+  section-heading:
+    en: At Your Service
+    fa: آمادۀ خدمتگزاری
+  aos-animation-delay: 500  # milliseconds between each two
+  array:
+    -
+      heading:
+        en: Unrivaled Technology
+        fa: فناوری بی‌رقیب
+      text:
+        en: Research and development (R&D) is the beating heart of Eleman International.
+        fa: تحقیق و توسعه، قلب تپندۀ مؤسسۀ بین‌المللی المان است.
+      fa-icon: fal fa-gem
+      aos-animation: animate__flip
+    -
+      heading:
+        en: Ready to Implement
+        fa: آمادۀ اجرا
+      text:
+        en: Our technologies are ready for implementation when you are! All solutions are adaptable to your projects.
+        fa: فناوری‌های ما آمادۀ اجرا بوده و تمامی راهکارهای ما قابل سازگاری با پروژه‌های شما هستند.
+      fa-icon: fad fa-paper-plane
+      aos-animation: animate__fadeInBottomLeft
+    -
+      heading:
+        en: State of The Art
+        fa: پیشرو و نوین
+      text:
+        en: Developed by some of the world's most pre-eminent scientists, Eleman International's technologies are constantly pushing the boundaries of the industry.
+        fa: فناوری‌های مؤسسۀ بین‌المللی المان توسط گروهی از برجسته‌ترین دانشمندان دنیا توسعه یافته است و به طور مداوم مرزهای صنعت را گسترش می‌دهد.
+      fa-icon: fal fa-newspaper
+      aos-animation: animate__rotateIn
+    -
+      heading:
+        en: Made with Love
+        fa: مطابق با اصول توسعۀ پایدار
+      text:
+        en: >-
+          By research teams around the globe: North America, Europe, and Asia.
+        fa: >-
+          ساخته شده توسط تیم‌های تحقیقاتی در سراسر دنیا–آمریکای شمالی، اروپا، و آسیا–با هدف توسعۀ پایدار.
+      fa-icon: fa fa-heart
+      aos-animation: animate__bounceIn
+
+
 contact:
+  heading:
+    en: Let's Get In Touch!
+    fa: با ما تماس بگیرید.
+  text:
+    en: >-
+      Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you shortly.
+    fa: >-
+      آیا برای شروع پروژۀ آتی خود با ما آماده‌اید؟ با ما تماس بگیرید و در اولین فرصت برآورد رایگان خود را دریافت کنید.
   email:
+    bot-defense-text:
+      en: Bot defense.<br>Hover over to reveal the address.
+      fa: دفاع بات. روی این متن بروید تا آدرس نمایان شود.
     # Enter only the prefix of the email addresses.
     hello: hello
     domain: intereleman.ir
   phone:
+    bot-defense-text:
+      en: Bot defense.<br>Hover over to reveal the number.
+      fa: دفاع بات. روی این متن بروید تا شماره نمایان شود.
     # Enter the phone numbers in reverse (for bot protection).
     en: 5556 6966 12 89+
     fa: ۵۵۵۶۶۹۶۶ - ۱۲۰

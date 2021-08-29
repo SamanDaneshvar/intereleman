@@ -3,10 +3,10 @@
     {% include head.html %}
 
     <body id="page-top">
-        {% include {{ page.lang | append: "/nav.html" }} %}
-        {% include {{ page.lang | append: "/header.html" }} %}
+        {% include nav.html %}
+        {% include header.html compact=true %}
         {{ content }}
-        {% include {{ page.lang | append: "/contact.html" }} %}
+        {% include contact.html %}
 
         {% include scripts.html %}
     </body>
