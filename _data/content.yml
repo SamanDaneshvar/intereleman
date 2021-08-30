@@ -213,6 +213,14 @@ contact:
     # Enter only the prefix of the email addresses.
     hello: hello
     domain: intereleman.ir
+  mobile:
+    bot-defense-text:
+      en: Bot defense.<br>Hover over to reveal the number.
+      fa: دفاع بات. روی این متن بروید تا شماره نمایان شود.
+    # Enter the phone numbers in reverse (for bot protection).
+    en: 0764 096 219 89+
+    fa: ۰۷۶۴۰۹۶ - ۲۱۹۰
+    url: 0764-096-219-89+:let
   phone:
     bot-defense-text:
       en: Bot defense.<br>Hover over to reveal the number.

@@ -17,6 +17,13 @@
                     <p>{{ this.email.bot-defense-text[lg] }}</p>
                 </a>
             </div>
+
+            <div class="col-lg-2">
+                <a id="mobile" href="tel:+98" onmouseover="reveal(this)" ontouchstart="reveal(this)">
+                    <i class="fad fa-mobile" data-aos="animate__fadeIn"></i>
+                    <p>{{ this.mobile.bot-defense-text[lg] }}</p>
+                </a>
+            </div>
 			
             <div class="col-lg-2">
                 <a id="phone" href="tel:+98" onmouseover="reveal(this)" ontouchstart="reveal(this)">
@@ -59,6 +66,10 @@ window.reveal = function(element) {
     const ADDRESS = "{{ this.email.hello }}" + String.fromCharCode(64) + "{{ this.email.domain }}";
     element.getElementsByTagName("p")[0].innerHTML = ADDRESS;
     element.href = ":otliam".split("").reverse().join("") + ADDRESS;
+  } else if (element.id == "mobile") {
+      element.style = "direction: ltr;";  // This is necessary for Persian pages, and uneffective on English pages.
+      element.getElementsByTagName("p")[0].innerHTML = "{{ this.mobile[lg] }}".split("").reverse().join("");
+      element.href = "{{ this.mobile.url }}".split("").reverse().join("");
   } else if (element.id == "phone") {
     element.style = "direction: ltr;";  // This is necessary for Persian pages, and uneffective on English pages.
 	element.getElementsByTagName("p")[0].innerHTML = "{{ this.phone[lg] }}".split("").reverse().join("");
