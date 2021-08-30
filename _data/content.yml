@@ -1,35 +1,28 @@
-site:
-  title:
+nav:
+  site-title:
     en: Eleman International
     fa: مؤسسه بین‌المللی المان
-  description:
-    en: >-
-      Eleman International Institute of Industrial and Manufacturing Research (Eleman I3MR)
-    fa: >-
-      مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
-
-
-nav:
-  -
-    href: "#ipc-intro"
-    label:
-      en: Insulator Polymer Concrete (IPC)
-      fa: پلیمر بتن عایق (IPC)
-  -
-    href: "#services"
-    label:
-      en: Services
-      fa: خدمات
-  -
-    href: "#portfolio"
-    label:
-      en: Portfolio
-      fa: پروژه‌ها
-  -
-    href: "#contact"
-    label:
-      en: Contact
-      fa: تماس
+  links:
+    -
+      href: "#ipc-intro"
+      label:
+        en: Insulator Polymer Concrete (IPC)
+        fa: پلیمر بتن عایق (IPC)
+    -
+      href: "#services"
+      label:
+        en: Services
+        fa: خدمات
+    -
+      href: "#portfolio"
+      label:
+        en: Portfolio
+        fa: پروژه‌ها
+    -
+      href: "#contact"
+      label:
+        en: Contact
+        fa: تماس
 
 
 home:
@@ -45,6 +38,15 @@ home:
       label:
         en: About Insulator Polymer Concrete (IPC)
         fa: دربارۀ پلیمر بتن عایق (IPC)
+  seo:
+    title:
+      en: Eleman International
+      fa: مؤسسه بین‌المللی المان
+    description:
+      en: >-
+        Eleman International Institute of Industrial and Manufacturing Research (Eleman I3MR)
+      fa: >-
+        مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
 
 
 call-to-action:
@@ -227,13 +229,22 @@ contact:
 ipc:
   header:
     title:
-      en:
+      en: Insulator Polymer Concrete (IPC)
       fa: پلیمر بتن عایق (IPC)
     subtitle:
-      en:
+      en: For The First Time in Iran
       fa: برای اولین بار در ایران
     button:
       href:
       label:
         en:
         fa:
+  seo:
+    title:
+      en: Insulator Polymer Concrete (IPC) | Eleman International
+      fa: پلیمر بتن عایق (IPC) | مؤسسه بین‌المللی المان
+    description:
+      en: >-
+        A new way to optimize energy efficiency and speed up construction, for the first time in Iran.
+      fa: >-
+        راهی نوین برای بهینه‌سازی مصرف انرژی و افزایش سرعت ساخت، برای اولین بار در ایران.

@@ -22,13 +22,13 @@
                     /{{ lg }}
                 {%- endif -%}
             {%- endcapture -%}
-            <a class="navbar-brand page-scroll" href="{{ brand_href }}">{{ site.data.content.site.title[lg] }}</a>
+            <a class="navbar-brand page-scroll" href="{{ brand_href }}">{{ this.site-title[lg] }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-            {% for item in this %}
+            {% for item in this.links %}
                 {% capture item_href -%}
                     {%- unless page.url == home_url -%}
                         /{{ lg }}/

@@ -1,4 +1,5 @@
-{% assign this = site.data.content.site %}
+{% capture page_name %}{{ page.name | downcase | remove: ".md" | remove: ".html" }}{% endcapture %}
+{% assign this = site.data.content[page_name].seo %}
 {% assign lg = page.lang %}
 
 <head>
@@ -7,14 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ this.description[lg] }}">
     <meta name="author" content="">
-
-    {% if page.title_override %}
-        {% assign page_title = page.title_override %}
-    {% else %}
-        {% capture page_title %}{% if page.title %}{{ page.title }} | {% endif %}{{ this.title[lg] }}{% endcapture %}
-    {% endif %}
-
-    <title>{{ page_title }}</title>
+    <title>{{ this.title[lg] }}</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ site.url }}/assets/img/favicon.png">
