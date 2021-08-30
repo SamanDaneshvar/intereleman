@@ -9,8 +9,8 @@
 			<h3>{{ this.subtitle[lg] }}</h3>
 			<br>
             {% unless include.compact %}
-            <a href="{{ this.button.href }}" class="btn btn-primary btn-xl page-scroll">{{ this.button.title[lg] }}</a>
             {% endunless %}
+            <a href="{{ this.button.href }}" class="btn btn-primary btn-xl page-scroll">{{ this.button.label[lg] }}</a>
         </div>
     </div>
 </header>

@@ -26,22 +26,22 @@ header:
 nav:
   -
     href: "#ipc-intro"
-    title:
+    label:
       en: Insulator Polymer Concrete (IPC)
       fa: پلیمر بتن عایق (IPC)
   -
     href: "#services"
-    title:
+    label:
       en: Services
       fa: خدمات
   -
     href: "#portfolio"
-    title:
+    label:
       en: Portfolio
       fa: پروژه‌ها
   -
     href: "#contact"
-    title:
+    label:
       en: Contact
       fa: تماس
 
@@ -57,7 +57,7 @@ call-to-action:
       مؤسسۀ بین‌المللی المان با یک هدف بزرگ هدایت می‌شود:<br>ساختن دنیایی بهتر به وسیلۀ نوآوری، تحقیقات، و آموزش.
   button:
     href: "#contact"
-    title:
+    label:
       en: Get Started!
       fa: شروع کنید!
 
@@ -68,7 +68,7 @@ call-to-action-dark:
     fa: همین امروز برای برآورد رایگان اقدام کنید.
   button:
     href: "#contact"
-    title:
+    label:
       en: Get Started!
       fa: شروع کنید!
 
