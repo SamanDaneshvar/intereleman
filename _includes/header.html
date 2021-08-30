@@ -1,4 +1,5 @@
-{% assign this = site.data.content.header %}
+{% capture page_name %}{{ page.name | downcase | remove: ".md" | remove: ".html" }}{% endcapture %}
+{% assign this = site.data.content[page_name].header %}
 {% assign lg = page.lang %}
 
 <header {% if include.compact %}class="compact"{% endif %}>
@@ -8,9 +9,9 @@
             <hr>
 			<h3>{{ this.subtitle[lg] }}</h3>
 			<br>
-            {% unless include.compact %}
-            {% endunless %}
+            {% if this.button.href %}
             <a href="{{ this.button.href }}" class="btn btn-primary btn-xl page-scroll">{{ this.button.label[lg] }}</a>
+            {% endif %}
         </div>
     </div>
 </header>

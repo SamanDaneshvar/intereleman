@@ -9,20 +9,6 @@ site:
       مؤسسه بین‌المللی تحقیقات صنعتی - تولیدی المان
 
 
-header:
-  title:
-    en: Eleman International
-    fa: مؤسسه بین‌المللی اِلِمان
-  subtitle:
-    en: Pushing the boundaries of science and technology.
-    fa: تحقیقات صنعتی - تولیدی
-  button:
-    href: "#ipc-intro"
-    title:
-      en: About Insulator Polymer Concrete (IPC)
-      fa: دربارۀ پلیمر بتن عایق (IPC)
-
-
 nav:
   -
     href: "#ipc-intro"
@@ -44,6 +30,21 @@ nav:
     label:
       en: Contact
       fa: تماس
+
+
+home:
+  header:
+    title:
+      en: Eleman International
+      fa: مؤسسه بین‌المللی اِلِمان
+    subtitle:
+      en: Pushing the boundaries of science and technology.
+      fa: تحقیقات صنعتی - تولیدی
+    button:
+      href: "#ipc-intro"
+      label:
+        en: About Insulator Polymer Concrete (IPC)
+        fa: دربارۀ پلیمر بتن عایق (IPC)
 
 
 call-to-action:
@@ -221,3 +222,18 @@ contact:
   # Social media
   linkedin: eleman-international
   twitter:
+
+
+ipc:
+  header:
+    title:
+      en:
+      fa: پلیمر بتن عایق (IPC)
+    subtitle:
+      en:
+      fa: برای اولین بار در ایران
+    button:
+      href:
+      label:
+        en:
+        fa:
